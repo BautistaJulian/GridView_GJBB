@@ -11,7 +11,7 @@ class VeterinariaAPP extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'Flutter App Learning',
         theme: ThemeData(
-          primarySwatch: Colors.green,
+          primarySwatch: Colors.blueGrey,
         ),
         home: const Articulos());
   }
