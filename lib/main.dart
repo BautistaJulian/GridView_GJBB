@@ -52,6 +52,10 @@ class _ArticulosState extends State<Articulos> {
     return Scaffold(
         appBar: AppBar(
           title: const Text("Listado de articulos"),
+          actions: [
+            Icon(Icons.search),
+            Icon(Icons.more_vert)
+          ],
         ),
         body: GridView.builder(
           itemCount: images.length,
