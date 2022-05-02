@@ -1,30 +1,44 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(VeterinariaAPP());
 }
 
-class MyApp extends StatelessWidget {
+class VeterinariaAPP extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Flutter App Learning',
         theme: ThemeData(
-          primarySwatch: Colors.green,
+          primarySwatch: Colors.blueGrey,
         ),
-        home: const MyHomePage());
+        home: const Articulos());
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key}) : super(key: key);
+class Articulos extends StatefulWidget {
+  const Articulos({Key? key}) : super(key: key);
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  _ArticulosState createState() => _ArticulosState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _ArticulosState extends State<Articulos> {
   List<String> images = [
+    "assets/images/chaleco.jpg",
+    "assets/images/correa.jpg",
+    "assets/images/caja_de_arena.jpg",
+    "assets/images/pelota.jpg",
+    "assets/images/chaleco.jpg",
+    "assets/images/correa.jpg",
+    "assets/images/peluche.jpg",
+    "assets/images/chaleco.jpg",
+    "assets/images/correa.jpg",
+    "assets/images/caja_de_arena.jpg",
+    "assets/images/pelota.jpg",
+    "assets/images/chaleco.jpg",
+    "assets/images/correa.jpg",
+    "assets/images/peluche.jpg",
     "assets/images/chaleco.jpg",
     "assets/images/correa.jpg",
     "assets/images/caja_de_arena.jpg",
@@ -37,7 +51,11 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text("Flutter GridView"),
+          title: const Text("Listado de articulos"),
+          actions: [
+            Icon(Icons.search),
+            Icon(Icons.more_vert)
+          ],
         ),
         body: GridView.builder(
           itemCount: images.length,
