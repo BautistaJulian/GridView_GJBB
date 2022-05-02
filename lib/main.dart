@@ -51,7 +51,7 @@ class _ArticulosState extends State<Articulos> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text("Flutter GridView"),
+          title: const Text("Listado de articulos."),
         ),
         body: GridView.builder(
           itemCount: images.length,
