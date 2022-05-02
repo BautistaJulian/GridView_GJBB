@@ -35,7 +35,7 @@ class _ArticulosState extends State<Articulos> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text("Listado de articulos"),
+          title: const Text("Listado de articulos v2"),
         ),
         body: GridView.builder(
           itemCount: images.length,
