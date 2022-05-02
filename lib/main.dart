@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(VeterinariaAPP());
 }
 
-class MyApp extends StatelessWidget {
+class VeterinariaAPP extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -13,17 +13,17 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.green,
         ),
-        home: const MyHomePage());
+        home: const Articulos());
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key}) : super(key: key);
+class Articulos extends StatefulWidget {
+  const Articulos({Key? key}) : super(key: key);
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  _ArticulosState createState() => _ArticulosState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _ArticulosState extends State<Articulos> {
   List<String> images = [
     "assets/images/chaleco.jpg",
     "assets/images/correa.jpg",
